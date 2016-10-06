@@ -32,7 +32,18 @@
         <version>16</version>
         <relativePath></relativePath>
     </parent>
-
+    <distributionManagement>
+        <snapshotRepository>
+            <id>snapshots</id>
+            <name>Artifactory</name>
+            <url>http://artifactory.laximo.ru/artifactory/libs-snapshot-local</url>
+        </snapshotRepository>
+        <repository>
+            <id>central</id>
+            <name>Artifactory</name>
+            <url>http://artifactory.laximo.ru/artifactory/libs-release-local</url>
+        </repository>
+    </distributionManagement>
     <properties>
         <ignite.edition>fabric</ignite.edition>
         <hadoop.version>2.4.1</hadoop.version>
